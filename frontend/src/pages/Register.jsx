@@ -37,7 +37,7 @@ function Register() {
     register,
     handleSubmit,
     formState: { errors },
-    // reset,
+    reset,
   } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
@@ -51,7 +51,7 @@ function Register() {
 
   const onSubmit = async (data) => {
     console.warn(data);
-    // reset();
+    reset();
   };
 
   return (
