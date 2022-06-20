@@ -16,11 +16,11 @@ const schema = yup
       .required(),
     firstName: yup
       .string()
-      .matches(/^([^0-9]*)$/)
+      .matches(/^([^0-9]*)$/, "Name should not contain number")
       .required(),
     lastName: yup
       .string()
-      .matches(/^([^0-9]*)$/)
+      .matches(/^([^0-9]*)$/, "Name should not contain number")
       .required(),
     phone: yup
       .string()
